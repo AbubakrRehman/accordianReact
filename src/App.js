@@ -1,27 +1,29 @@
 import './App.css';
+import Accordian from './components/Accordian';
+import ListRenderer from './components/ListRenderer';
 
 function App() {
+  const items = [
+    {
+      id: 1,
+      ques: "Who is Abu?",
+      ans: "IT Engineer"
+    },
+    {
+      id: 2,
+      ques: "Who is Abu?",
+      ans: "IT Engineer"
+    },
+    {
+      id: 3,
+      ques: "Who is Abu?",
+      ans: "IT Engineer"
+    },
+  ]
   return (
     <div className="App">
-      <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
-        <p>
-          GitHub Codespaces <span className="heart">♥️</span> React
-        </p>
-        <p className="small">
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
-      </header>
+      <ListRenderer items={items} itemName="faq" ItemComponent={Accordian} />
+      {/* <Accordian items={items} /> */}
     </div>
   );
 }

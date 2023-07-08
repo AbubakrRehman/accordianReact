@@ -1,0 +1,49 @@
+.accordian__item {
+    border: 2px solid red;
+}
+
+.ans{
+    display:none;
+}
+
+.accordian__item.active .ans{
+    display: block;
+}
+
+
+
+.btn{
+    border:2px solid black;
+    background-color: transparent;
+    padding:7px;
+    font-size: 20px;
+}
+
+.btn:focus{
+   outline:none;
+}
+
+.btn:hover{
+    cursor:pointer;
+}
+
+.accordian__item{
+    list-style: none;
+    padding:0;
+}
+
+.plus{
+    display: block;
+}
+
+.minus{
+    display:none;
+}
+
+.accordian__item.active .plus{
+    display:none;
+}
+
+.accordian__item.active .minus{
+    display:block;
+}
